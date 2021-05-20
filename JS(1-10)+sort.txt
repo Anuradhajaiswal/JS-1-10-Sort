@@ -1,0 +1,27 @@
+Array Sorting
+1- By default sorts in ascending order.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.sort());
+console.log(fruits.reverse());
+
+
+2-
+var numArray = [140000, 104, 99];
+numArray.sort(function(a, b) {
+  return a - b; // ascending order
+  return b - a; // descending order
+});
+console.log(numArray);
+
+return a - b means if a < b, the return value will be negative, meaning that a should be sorted before b .
+return b - a means if b < a, the return value will be negative, meaning that b should be sorted before a .
+
+
+3- Print numbers from 1 to 10 without using for loop.
+
+(function printNumbers(a, b) { 
+	console.log(a); 
+	if(a < b) 
+   		printNumbers(a + 1, b); 
+})(1, 10)
+
